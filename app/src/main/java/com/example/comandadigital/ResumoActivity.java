@@ -9,6 +9,7 @@ public class ResumoActivity extends AppCompatActivity {
 
     private TextView produtoResumo;
     private TextView valoResumo;
+    private TextView valorTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,7 @@ public class ResumoActivity extends AppCompatActivity {
 
         produtoResumo = findViewById(R.id.textViewProdutoResumo);
         valoResumo = findViewById(R.id.textViewValorResumo);
+        valorTotal = findViewById(R.id.textViewTotal);
 
 
 
@@ -24,11 +26,11 @@ public class ResumoActivity extends AppCompatActivity {
 
        String textProduto = dados.getString("produto");
        String textValor = dados.getString("valor");
+       String textTotal = dados.getString("valorTotal");
 
        produtoResumo.setText(textProduto);
-       valoResumo.setText(textValor);
-
-
+       valoResumo.setText("R$ " + textValor);
+       valorTotal.setText("R$ " + textTotal);
 
 
     }

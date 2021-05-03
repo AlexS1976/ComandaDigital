@@ -12,7 +12,7 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@android:mipmap/sym_def_app_icon" />
 
     <EditText
         android:id="@+id/editTextProduto"
@@ -30,9 +30,18 @@
         android:hint="Valor"
         android:inputType="textPersonName" />
 
+    <EditText
+        android:id="@+id/textViewQauntidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Quantidade"
+        android:inputType="textPersonName" />
+
     <Button
         android:id="@+id/buttonEnviar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Enviar" />
+
 </LinearLayout>
